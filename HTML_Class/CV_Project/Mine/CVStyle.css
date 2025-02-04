@@ -1,0 +1,208 @@
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: #4780ca ;
+	background-size: cover;
+	width: auto;
+	height: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+header {
+	display: flex;
+	background-color: #fffbfd ;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	flex-wrap: nowrap;
+	width: auto;
+	height: auto;
+	justify-content: space-between;
+}
+
+div{
+	display: flex;
+	flex-wrap: wrap;
+	width: fit-content;
+	height: auto;
+}
+#R{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	width: min-content;
+}
+#C{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+#T{
+	border-top: dotted black 2px;
+	padding: 10px;
+}
+#ID_Pos{
+	display: flex;
+	justify-content: flex-start;
+	align-self: center;
+	flex-wrap: nowrap;
+	margin: 25px;
+	border: 2.5px solid black;
+	min-width: 150px; min-height: min-content;
+	max-height: fit-content;
+	width: 300px; height: auto;
+	overflow: hidden;
+}
+
+p{
+	margin: 10px;
+}
+a{
+	color: #ffffff;
+}
+a ::after{
+	color: red;
+}
+
+.border{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	background-color: #b1b1b1;
+	width: 55%;
+	min-height: min-content;
+	max-height: fit-content;
+	overflow: auto;
+	transition: 1s;
+}
+.border:hover{
+	box-shadow: 5px 10px #000000;
+	width: 70%;
+	transition: 1.5s;
+	
+}
+
+.footer{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #201741;
+	font-style: italic;
+	width: 100%;
+}
+.footer p{
+    color:white;
+}
+
+#AddBox{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: rgba(244, 211, 255, 0.589);
+	width: 250px;
+	height: 140px;
+	margin: 15px;
+	padding: 15px;
+}
+#AddBox:hover{
+	background-color:  rgb(244, 211, 255);
+	box-shadow: 5px 10px #888888;
+}
+#AddBox p{
+	margin: 8px 0;
+
+}
+h1{
+	font: fantasy;
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: fit-content;
+	height: auto;
+}
+
+h2{
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	width: 250px;
+}
+
+main{
+	display: flex;
+	background-color: #fffbfd ;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	width: auto;
+	height: auto;
+}
+article{
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: -8px;
+	padding-bottom: 0px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.accordion {
+	display: flex;
+	flex-direction: column;
+	max-width: 35%;
+	min-width: 250px;
+	height: fit-content;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	overflow: hidden; /* naturally hidden */
+	background: #ffffef;
+}
+.accordion_label,
+.accordion__content {
+	padding: 15px 20px;
+}
+.accordion_label {
+	display: block;
+	color: black;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative;
+	transition: background 0.1s;
+}
+
+.accordion_label:hover {
+	background: rgba(0, 0, 0, 0.1);
+}
+.accordion_label::after {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -250px;
+	top: 15px;
+	width: 12px;
+	height: 6px;
+	transition: transform 1s; 
+}
+.accordion__content {
+	background: #ffffff;
+	line-height: 1.6;
+	font-size: 0.85em;
+	display: none;
+}
+.accordion__input {
+	display: none;
+}
+.accordion__input:checked ~ .accordion__content{
+	display: block;
+
+}
+.accordion__input:checked ~ .accordion_label::after{
+	transform: translateY(-50%); rotate: (0.5turn);
+}

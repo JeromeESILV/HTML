@@ -1,0 +1,145 @@
+body{
+    margin: 0px;
+    width: 100%;
+}
+header{
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 0px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #201741;
+	font-style: italic;
+    width: 100%;
+    height: min-content;
+}
+
+a{
+    color: #ffffff;
+}
+
+#A{
+    border: 5px solid #201741;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    overflow: hidden;
+    background-image: url("https://image.shutterstock.com/image-photo/full-concentration-work-group-young-260nw-1043501293.jpg");
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: 0 -50px;
+    background-attachment: scroll;
+}
+
+#A h1 {
+    position: relative;
+    z-index: 2;
+}
+#B{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid #201741;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: inherit;
+    height: 280px;
+    overflow-y: scroll;
+}
+#B img{
+    border: 3px ridge #201741;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    height: 250px;
+}
+#C{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 5px solid #201741;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: inherit;
+    height: 280px;
+    overflow-y: scroll;
+}
+#C img{
+    border: 3px ridge #201741;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+
+  }
+  tr, td{
+    border: 1px solid black;
+    font-size: 45px;
+  }
+  #D{
+      background-color: rgb(37, 67, 165);
+      font-style: oblique;
+      color: #ffffff;
+}
+
+article{
+	display: flex;
+	margin-top: 150px;
+	margin-bottom: -8px;
+	padding-bottom: 0px;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+}
+.footer{
+position: absolute;
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-color: #201741;
+font-style: italic;
+width: 100%;
+}
+.footer div{
+    background-color: #201741;
+}
+.footer p{
+    color: #201741;
+}
